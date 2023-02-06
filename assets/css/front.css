@@ -1,0 +1,157 @@
+body {
+  background-color: #ccc;
+}
+
+.athlete-card {
+  display: flex;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 800px) {
+  .athlete-card {
+    padding-bottom: 250px;
+  }
+}
+.athlete-card--error {
+  color: #FF7E29;
+  padding: 1.8rem;
+  text-align: center;
+  font-family: "Futura PT", serif;
+}
+.athlete-card__photo {
+  bottom: 0;
+  position: absolute;
+}
+@media (max-width: 800px) {
+  .athlete-card__photo {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.athlete-card__right-part {
+  width: 100%;
+  padding: 1.8rem 1.8rem 4.25rem;
+}
+@media (min-width: 801px) {
+  .athlete-card__right-part {
+    margin-left: 300px;
+  }
+}
+.athlete-card--no-photo {
+  padding-bottom: 0 !important;
+}
+.athlete-card--no-photo .athlete-card__right-part {
+  padding-bottom: 1.8rem;
+  margin-left: 0 !important;
+}
+.athlete-card__data-top {
+  display: flex;
+  justify-content: space-between;
+}
+.athlete-card__name {
+  font-weight: bold;
+  font-size: 2.25rem;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  background: linear-gradient(88.13deg, #7319FA 0%, #FF33B4 50%, #FF7E29 100%);
+}
+.athlete-card__social-network {
+  gap: 8px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.athlete-card__social-network a {
+  color: #999999;
+}
+.athlete-card__data-middle {
+  gap: 30px;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-family: "Futura PT", serif;
+}
+@media (min-width: 901px) {
+  .athlete-card__data-middle > span :first-child {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .athlete-card__data-middle {
+    margin-top: 0.5rem;
+  }
+  .athlete-card__data-middle > span {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .athlete-card__data-middle img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .athlete-card__data-middle {
+    justify-content: center;
+  }
+}
+.athlete-card__date-born span:last-of-type {
+  color: #999999;
+  font-weight: normal;
+}
+.athlete-card__data-bottom {
+  color: white;
+  display: flex;
+  padding: 0.75rem;
+  font-size: 14px;
+  font-weight: bold;
+  width: fit-content;
+  border-radius: 10px;
+  text-transform: uppercase;
+  justify-content: space-around;
+  font-family: "Futura PT", serif;
+  background: linear-gradient(88.13deg, #7319FA 0%, #FF33B4 50%, #FF7E29 100%);
+}
+.athlete-card__data-bottom > span {
+  min-width: 11rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 1201px) {
+  .athlete-card__data-bottom > :not(:first-child) {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+@media (max-width: 1200px) {
+  .athlete-card__data-bottom {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .athlete-card__data-bottom {
+    width: auto;
+  }
+}
+
+.drop-shadow {
+  filter: drop-shadow(0 0.3rem 0.25rem #AAAAAA);
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*# sourceMappingURL=front.css.map */
